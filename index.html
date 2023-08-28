@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>Base1024Y Yi-encode char map</title>
+</head><body>
+<h1>Base1024Y Yi-encode char map</h1>
+<main id=main></main>
+
+<script type="module">
+import { Base1024Y } from "./Base1024Y.js";
+
+const cr = (tag, p) => {
+  const c = document.createElement(tag);
+  if (p) p.appendChild(c);
+  return c;
+};
+const tbl = cr("table", main);
+const tr = cr("tr", tbl);
+cr("th", tr);
+for (let i = 0; i < 16; i++) {
+  cr("th", tr).textContent = i.toString(16);
+}
+const b = new Uint8Array(2);
+for (let i = 0; i < 16 * 4; i++) {
+  const tr = cr("tr", tbl);
+  cr("th", tr).textContent = i.toString(16);
+  for (let j = 0; j < 16; j++) {
+    const n = (i << 4) | j;
+    console.log(n.toString(2));
+    b[0] = n >> 2;
+    b[1] = (n & 0x3) << 6;
+    cr("td", tr).textContent = Base1024Y.encode(b)[0];
+  }
+}
+</script>
+
+<a href=https://github.com/code4fukui/Base1024Y/>src on GitHub</a>
+
+<style>
+body {
+  text-align: center;
+}
+table {
+  display: inline-block;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+}
+td, th {
+  font-size: 200%;
+  margin: 0;
+  padding: 0 .5em;
+  border: 1px solid black;
+}
+a {
+  color: gray !important;
+}
+</style>
+</body></html>
