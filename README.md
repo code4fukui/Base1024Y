@@ -13,7 +13,7 @@ One of the primary purposes is to have aesthetically pleasing SHA1 hashes. Compa
 - B32:    `RJ56_U1WM_LTT5_3TQH_K4P0_YJ4L_UTKD_3ZZZ_ZW`
 - B16384: `叕蒄綨涓婐暶嫪崷婆歶旴`
 - B256B:  `⣰⢐⡶⠑⡽⢅⣏⣤⡐⡈⡵⣤⠍⣧⣦⣀⣙⡶⣺⡓`
-- B1024:  `ꁜꁗꆡꂾꊇꎓꃅꀘꋘꌺꈼꍳꁆꇗꆗꏔ`
+- B1024Y: `ꁜꁗꆡꂾꊇꎓꃅꀘꋘꌺꈼꍳꁆꇗꆗꏔ`
 
 ## Getting started
 
