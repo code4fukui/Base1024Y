@@ -4,7 +4,7 @@
 
 ![Base1024Y.png](Base1024Y.png)
 
-[Base1024Y braille-encode char map](https://code4fukui.github.io/Base1024Y/)
+[Base1024Y Yi-encode char map](https://code4fukui.github.io/Base1024Y/)
 
 One of the primary purposes is to have aesthetically pleasing SHA1 hashes. Compare:
 
