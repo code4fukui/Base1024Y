@@ -1,22 +1,17 @@
-# Base1024Y Yi-encode encoding/decoding ES module for JavaScript
+# Base1024Y
 
-- Base1024Y is an ES module for Yi-encode, 10bit encoding with [Yi script](https://en.wikipedia.org/wiki/Yi_script)([彝文字](https://ja.wikipedia.org/wiki/%E5%BD%9D%E6%96%87%E5%AD%97)) (0xa000-0xa3ff in unicode)
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-![Base1024Y.png](Base1024Y.png)
+Base1024Y is an ES module for Yi-encode, a 10-bit encoding with the [Yi script](https://en.wikipedia.org/wiki/Yi_script) (U+A000 to U+A3FF in Unicode).
 
+## Demo
 [Base1024Y Yi-encode char map](https://code4fukui.github.io/Base1024Y/)
 
-One of the primary purposes is to have aesthetically pleasing SHA1 hashes. Compare:
+## Features
+- Encoding and decoding of binary data using the Yi script characters
+- Provides aesthetically pleasing representation of hashes and other binary data
 
-- Hex:    `17057684bea1f9331418b633a8f373119d765fd4`
-- B64:    `FwV2hL6h+TMUGLYzqPNzEZ12X9Q=`
-- B32:    `RJ56_U1WM_LTT5_3TQH_K4P0_YJ4L_UTKD_3ZZZ_ZW`
-- B16384: `叕蒄綨涓婐暶嫪崷婆歶旴`
-- B256B:  `⣰⢐⡶⠑⡽⢅⣏⣤⡐⡈⡵⣤⠍⣧⣦⣀⣙⡶⣺⡓`
-- B1024Y: `ꁜꁗꆡꂾꊇꎓꃅꀘꋘꌺꈼꍳꁆꇗꆗꏔ`
-
-## Getting started
-
+## Usage
 In your code:
 
 ```javascript
@@ -33,7 +28,5 @@ const encoded2 = Base1024Y.encode(key);
 console.log(encoded2); // ꇷꆁꊳꊙꂜꂡꋮꀬꅶꂟꇾꇳꃛꇾꃅꇖꏙꌨꎫꁑꅒꂁꇗꂎꅏꀠ
 ```
 
-## reference
-
-- [Base256B](https://github.com/code4fukui/Base256B)
-- [Yi script](https://en.wikipedia.org/wiki/Yi_script)([彝文字](https://ja.wikipedia.org/wiki/%E5%BD%9D%E6%96%87%E5%AD%97))
+## License
+MIT License — see [LICENSE](LICENSE).
